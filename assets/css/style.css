@@ -1,0 +1,17 @@
+body {
+    background-color: #e0e0e0;
+    text-align: center;
+}
+.form-group {
+    width: 350px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.panel panel-default {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
