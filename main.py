@@ -63,8 +63,10 @@ class MainHandler(BaseHandler):
         new_message = Chat(name=name, message=message)
         new_message.put()
         seznam = Chat.query().fetch()
+        #seznam = sorted(seznam)
         params = {"seznam": seznam, "user_nick": name}
         return self.redirect_to("main", params=params)
+
 
 app = webapp2.WSGIApplication([
     webapp2.Route('/', MainHandler, name="main"),
