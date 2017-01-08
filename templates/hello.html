@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>bojpav CHAT</title>
 
     <!-- Bootstrap CSS -->
@@ -30,7 +31,8 @@
         <h3>Messages</h3>
 
         {% for message in seznam %}
-            <div class="col-md-4">
+
+            <div class="col-md-4 col-centered">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title"><strong>From: </strong> {{ message.name }}<strong> Date: </strong> {{ message.date.day }}.{{ message.date.month }}.{{ message.date.year }}.
